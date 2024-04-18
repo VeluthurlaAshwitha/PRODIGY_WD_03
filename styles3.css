@@ -1,0 +1,66 @@
+body {
+    background-color: lightpink; /* Change this to your desired color */
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    background-color: lightblue;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added box-shadow */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc; /* Increased border width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell:active {
+    transform: scale(0.95);
+}
+
+.status {
+    margin-top: 20px;
+}
+
+.restart-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.restart-btn:hover {
+    background-color: #45a049;
+}
